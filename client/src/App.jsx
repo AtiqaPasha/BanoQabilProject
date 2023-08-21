@@ -13,7 +13,7 @@ const ComponentByRoles = {
   'guest': Guest
 }
 
-const getUserRole = (params) => ComponentByRoles[params] || ComponentByRoles['user']
+const getUserRole = (params) => ComponentByRoles[params] || ComponentByRoles['guest']
 
 export default function App() {
   const { state, dispatch } = useContext(GlobalContext)
